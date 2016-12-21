@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_menu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.barak.fourinarow.MainMenu">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome to The Four In A Row Game!"
+        android:id="@+id/textViewWolcome"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:id="@+id/buttonStartGame"
+        android:layout_marginBottom="137dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="StartGame_OnClick"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/buttonExit"
+        android:onClick="ExitGame_OnClick"
+        android:layout_alignTop="@+id/buttonStartGame"
+        android:layout_alignEnd="@+id/textViewWolcome"
+        android:layout_marginEnd="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/buttonSettings"
+        android:layout_alignTop="@+id/buttonExit"
+        android:layout_centerHorizontal="true"
+        android:onClick="Settings_OnClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:id="@+id/buttonAbout"
+        android:layout_below="@+id/buttonExit"
+        android:layout_centerHorizontal="true"
+        android:onClick="About_OnClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Player 1:"
+        android:id="@+id/textView8"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/textView10"
+        android:layout_toStartOf="@+id/editTextPlayer1Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextPlayer1Name"
+        android:maxLength="12"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignEnd="@+id/textViewWolcome"
+        android:layout_marginTop="-5dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxPlayer2"
+        android:checked="false"
+        android:onClick="checkBoxHasChanged"
+        android:layout_below="@+id/editTextPlayer1Name"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Player 2:"
+        android:id="@+id/textView9"
+        android:layout_alignBottom="@+id/checkBoxPlayer2"
+        android:layout_toEndOf="@+id/checkBoxPlayer2"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="[Computer]"
+        android:ems="10"
+        android:id="@+id/editTextPlayer2Name"
+        android:enabled="false"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Players:"
+        android:id="@+id/textView10"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/textViewWolcome"
+        android:layout_alignEnd="@+id/buttonStartGame" />
+</RelativeLayout>
