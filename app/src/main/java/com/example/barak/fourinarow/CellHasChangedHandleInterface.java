@@ -1,7 +1,5 @@
 package com.example.barak.fourinarow;
 
-import android.location.GpsStatus;
-
 /**
  * Created by Barak on 7/6/2016.
  */
