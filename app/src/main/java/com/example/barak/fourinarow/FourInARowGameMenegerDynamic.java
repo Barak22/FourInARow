@@ -353,7 +353,7 @@ public class FourInARowGameMenegerDynamic extends AppCompatActivity implements C
 
     @Override
     public void CellHasChangedDelegate(char i_Sign, int i_Row, int i_Col) {
-        MyButton button = (MyButton) r_BoardButtonList.get((i_Row * r_TheGame.getBoard().getBoardWidth()) + i_Col);
+        MyButton button = r_BoardButtonList.get((i_Row * r_TheGame.getBoard().getBoardWidth()) + i_Col);
 
 
         if (i_Sign == 'O') {

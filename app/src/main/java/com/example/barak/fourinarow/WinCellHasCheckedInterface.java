@@ -5,5 +5,5 @@ package com.example.barak.fourinarow;
  */
 public interface WinCellHasCheckedInterface {
 
-    public void WinCellHasCheckedDelegate(int i_Row, int i_Col);
+    void WinCellHasCheckedDelegate(int i_Row, int i_Col);
 }

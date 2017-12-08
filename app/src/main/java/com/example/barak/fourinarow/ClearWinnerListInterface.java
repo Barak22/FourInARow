@@ -5,5 +5,5 @@ package com.example.barak.fourinarow;
  */
 public interface ClearWinnerListInterface {
 
-    public void ClearWinnerListDelegate();
+    void ClearWinnerListDelegate();
 }
