@@ -1,12 +1,12 @@
 package com.example.barak.fourinarow;
 
 import android.content.Context;
-import android.widget.Button;
+import android.support.v7.widget.AppCompatButton;
 
 /**
  * Created by Barak on 13/07/2016.
  */
-public class MyButton extends Button {
+public class MyButton extends AppCompatButton {
 
     private int m_ColIndex;
 
